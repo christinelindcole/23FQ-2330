@@ -1,0 +1,17 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Section 4.1 - Mathematica Demonstration:}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Section 4.1 - Mathematica Demonstration:}}{1}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-1001r1}{}{\ignorespaces Screenshot from the Ch4s1 Mathematica Demo notebook}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Section 4.1 - Group Work 2:}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Section 4.1 - Group Work 2:}}{4}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-2001r2}{}{\ignorespaces Dali's Target Group Work Activity Screenshot}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{Section 4.2 - Limits \& Continuity:}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-8}{Section 4.2 - Limits \& Continuity:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-9}{}{Definitions \& Terminology:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-10}{Definitions \& Terminology:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-11}{}{Examples:}}{9}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-12}{Examples:}}{9}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-13}{}{Mathematica Demo:}}{9}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-14}{Mathematica Demo:}}{9}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-6001r3}{}{\ignorespaces Screenshot from the Ch4s2 Mathematica Demo notebook}}{figure}\relax 
+\par 
