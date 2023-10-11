@@ -1,0 +1,631 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="23FQ-Math-2330-Ch4s6-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 80--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 80--><p class="noindent" >
+</p><!--l. 80--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 80--><p class="noindent" >
+</p><!--l. 80--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 2330: Multivariable Calculus</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">4.6: Directional Derivatives &#x0026; The Gradient</span></p></div>                                         </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Section 4.6 - Directional Derivatives &#x0026; The Gradient:</h3>
+<!--l. 87--><p class="noindent" >
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Deﬁnitions &#x0026; Terminology:</h4>
+
+<!--l. 92--><p class="noindent" ><img 
+src="Directional-Derivative.png" alt="PIC"  
+ />
+</p><!--l. 96--><p class="noindent" ><span 
+class="cmssbx-10">Directional Derivative:</span> <br 
+class="newline" />
+</p><!--l. 98--><p class="noindent" >The <span 
+class="cmssbx-10">Directional Derivative </span>in the <!--l. 98--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >u</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mrow></math>
+direction calculates the slope of the surface in the direction of the vector
+<!--l. 98--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >u</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mrow></math>.<br 
+class="newline" />
+</p><!--l. 100--><p class="noindent" >If <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math> is a diﬀerentiable
+function of <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+and <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>y</mi></mrow></math>, then
+<!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math> has a directional derivative in
+the direction of any <span 
+class="cmssbx-10">unit vector </span><!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >u</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>a</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>b</mi></mrow></mfenced></mrow></math>
+that can be calculated using:
+</p>
+<div class="math-display"><!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                         <msub><mrow 
+><mi 
+>D</mi></mrow><mrow 
+><mi 
+>u</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>b</mi> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi> <mo 
+class="MathClass-bin">⋅</mo><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >u</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover>
+</mrow></math></div>
+<!--l. 103--><p class="nopar" >
+</p><!--l. 108--><p class="noindent" ><span 
+class="cmssbx-10">The Gradient:</span>
+</p>
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 109--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                       <mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+></mrow></mfenced>
+</mrow></math></div>
+<!--l. 111--><p class="nopar" >
+</p><!--l. 121--><p class="noindent" ><span 
+class="cmssbx-10">Discussion: </span>Geometric Implications of <!--l. 121--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>D</mi></mrow><mrow 
+><mi 
+>u</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi> <mo 
+class="MathClass-bin">⋅</mo><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >u</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mrow></math>.
+                                                                                         
+                                                                                         
+          </p><dl class="enumerate"><dt class="enumerate">
+Example 1:  </dt><dd 
+class="enumerate">Find the directional derivative of <!--l. 129--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> ln</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+          at <!--l. 129--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+          in the direction of <!--l. 129--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>v</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">−</mo> <mn>3</mn><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mrow></math>.<br 
+class="newline" />
+          <!--l. 131--><p class="noindent" >
+          </p><!--l. 133--><p class="noindent" ><span class="underline"><span 
+class="cmssbx-10">Questions about the solution from the Video?</span> </span>
+          </p><!--l. 135--><p class="noindent" >
+          <!--tex4ht:inline--></p><!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="eqnarray-star" columnalign="right center left" >
+<mtr><mtd 
+class="eqnarray-1"> <msub><mrow 
+><mi 
+>D</mi></mrow><mrow 
+><mi 
+>v</mi></mrow></msub 
+><mi 
+>f</mi></mtd><mtd 
+class="eqnarray-2">   <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3">    <mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">⋅</mo><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >v</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover>                     </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">     <mspace width="1em" class="nbsp" /></mtd><mtd 
+class="eqnarray-2">     </mtd><mtd 
+class="eqnarray-3">                                        </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">     </mtd><mtd 
+class="eqnarray-2">   <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3"><msub><mrow 
+>    <mfenced separators="" 
+open=""  close="|" ><mrow><mfenced separators="" 
+open="⟨"  close="⟩" ><mrow>    <mfrac><mrow 
+><mn>2</mn><mi 
+>x</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow></mfrac><mspace width="1em" class="nbsp" /><mo 
+class="MathClass-punc">,</mo>   <mfrac><mrow 
+><mn>3</mn><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+<mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow></mfrac></mrow></mfenced></mrow></mfenced> </mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="⟨"  close="⟩" ><mrow> <mfrac><mrow 
+><mn>2</mn></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac><mspace width="1em" class="nbsp" /><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>3</mn></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac></mrow></mfenced></mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">       <mspace width="1em" class="nbsp" /></mtd><mtd 
+class="eqnarray-2">      </mtd><mtd 
+class="eqnarray-3">                                                       </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">       </mtd><mtd 
+class="eqnarray-2">    <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3">    <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /><mfrac><mrow 
+><mn>2</mn></mrow>
+<mrow 
+><mn>2</mn><mn>6</mn></mrow></mfrac><mspace width="1em" class="nbsp" /><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /><mfrac><mrow 
+><mn>2</mn><mn>7</mn></mrow>
+<mrow 
+><mn>2</mn><mn>6</mn></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="⟨"  close="⟩" ><mrow> <mfrac><mrow 
+><mn>2</mn></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac><mspace width="1em" class="nbsp" /><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>3</mn></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac></mrow></mfenced>                 </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">      <mi 
+>‘</mi></mtd><mtd 
+class="eqnarray-2">      </mtd><mtd 
+class="eqnarray-3">                                                       </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">       </mtd><mtd 
+class="eqnarray-2">    <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3">    <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /><mfrac><mrow 
+><mn>2</mn></mrow>
+<mrow 
+><mn>2</mn><mn>6</mn></mrow></mfrac></mrow></mfenced> <mfenced separators="" 
+open="("  close=")" ><mrow>  <mfrac><mrow 
+><mn>2</mn></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /><mfrac><mrow 
+><mn>2</mn><mn>7</mn></mrow>
+<mrow 
+><mn>2</mn><mn>6</mn></mrow></mfrac></mrow></mfenced> <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">−</mo><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>3</mn></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac></mrow></mfenced>                </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">       <mspace width="1em" class="nbsp" /></mtd><mtd 
+class="eqnarray-2">      </mtd><mtd 
+class="eqnarray-3">                                                       </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">       </mtd><mtd 
+class="eqnarray-2">    <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3">       <mfrac><mrow 
+><mn>7</mn><mn>7</mn></mrow> 
+<mrow 
+><mn>2</mn><mn>6</mn><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow></mfrac><mspace width="1em" class="nbsp" /><mspace width="1em" class="nbsp" /><mspace width="1em" class="nbsp" /> <mo 
+class="MathClass-rel">=</mo> <mspace width="1em" class="nbsp" /><mfrac><mrow 
+><mn>7</mn><mn>7</mn><msqrt><mrow><mn>1</mn><mn>3</mn></mrow></msqrt></mrow> 
+  <mrow 
+><mn>3</mn><mn>3</mn><mn>8</mn></mrow></mfrac>                              </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>                                                                        </mtr></mtable>
+</math>
+          <!--l. 141--><p class="nopar" >
+          </p></dd><dt class="enumerate">
+Example 2:  </dt><dd 
+class="enumerate">In what direction is the function <!--l. 148--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mn>2</mn><mi 
+>y</mi><mo 
+class="MathClass-bin">−</mo><mi 
+>x</mi></mrow></msup 
+></mrow></math>
+          increasing most rapidly at <!--l. 148--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+          and what is the maximum rate of increase?
+          </dd><dt class="enumerate">
+Example 3:  </dt><dd 
+class="enumerate"><span 
+class="cmssbx-10">Hiker Problem:</span><br 
+class="newline" />A hiker is walking on a mountain path when it begins to rain. If the height of the mountain is modeled by the equation
+          <!--l. 152--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mn>3</mn><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mn>5</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>,
+          where <!--l. 152--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+          are measured in miles, and the rain begins when the hiker is at the point
+          <!--l. 152--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>4</mn></mrow></mfrac><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow> 
+ <mrow 
+><mn>2</mn></mrow></mfrac>  <mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mn>3</mn></mrow> 
+<mrow 
+><mn>1</mn><mn>6</mn></mrow></mfrac></mrow></mfenced></mrow></math>,
+          in what direction should she head to descend the mountainside most rapidly?<br 
+class="newline" />
+          <!--l. 154--><p class="noindent" ><img 
+src="problemPlot.png" alt="PIC"  
+ /> <img 
+src="hikeContour.png" alt="PIC"  
+ />
+                                                                                         
+                                                                                         
+          </p></dd><dt class="enumerate">
+Example 4:  </dt><dd 
+class="enumerate"><span 
+class="cmssbx-10">Example from Marsden, Tromba, &#x0026; Weinstein, “Basic Multivariable Calculus”</span><br 
+class="newline" /> <br 
+class="newline" /><img 
+src="Surface3.png" alt="PIC"  
+ /><br 
+class="newline" />
+          <!--l. 165--><p class="noindent" ><img 
+src="SurfContour.png" alt="PIC"  
+ /> Answer the following questions about the surface<br 
+class="newline" /><!--l. 170--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>, shown in the ﬁgures on
+          this page, at the point <!--l. 170--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">.</mo><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>:
+          </p>
+               <ul class="itemize1">
+               <li class="itemize">Which way should the gradient vector point?
+               </li>
+               <li class="itemize">Is <!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math>?
+               </li>
+               <li class="itemize">In which direction would water ﬂow?
+               </li>
+               <li class="itemize">Is <!--l. 175--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>D</mi></mrow><mrow 
+><mi 
+>u</mi></mrow></msub 
+><mi 
+>f</mi></mrow></math>
+               positive, negative, or zero for <!--l. 175--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>u</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">⟨</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">⟩</mo></mrow></mrow></math>?
+               </li>
+               <li class="itemize">Find a direction in which <!--l. 176--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>D</mi></mrow><mrow 
+><mi 
+>u</mi></mrow></msub 
+><mi 
+>f</mi> <mo 
+class="MathClass-rel">≈</mo> <mn>0</mn></mrow></math>.</li></ul>
+          <!--l. 178--><p class="noindent" >Now, pick some other point, and answer the questions again!</p></dd></dl>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
