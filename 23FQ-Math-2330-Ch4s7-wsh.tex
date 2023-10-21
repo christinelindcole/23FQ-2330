@@ -1,0 +1,207 @@
+%\documentclass[10pt]{article}
+%%\input{../../common/1021_header.tex}
+%\input{../../common/header_old.tex}
+%\usepackage{tikz, wasysym, framed}
+%
+%\newcommand{\ihat}{\boldsymbol{\hat{\textbf{\i}}}}
+%\newcommand{\jhat}{\boldsymbol{\hat{\textbf{\j}}}}
+%\newcommand{\khat}{\boldsymbol{\hat{\textbf{k}}}}
+%
+%\let\oldvec\vec
+%\renewcommand{\vec}[1]{\oldvec{\mathbf{#1}}}
+%
+%\newcommand{\uhat}{\boldsymbol{\hat{\textbf{u}}}}
+%\newcommand{\grad}{\vec{\nabla}}
+%\newcommand{\<}{\left\langle}
+%\renewcommand{\>}{\right\rangle}
+%
+%
+%\begin{document}
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace all:% %%\begin{minipage}% %%%%%\end{minipage} %%%%%%\begin{mulicols}  %%%%%%\end{mulicols}  %%%%%\columnbreak % %%%%%%\begin{framed} %%%%%\endframed} %%%%%%\hrule
+% Search for \mathbf
+% Replace \\] with \[ and \) with \(
+% Enclose graphics in figure environments and add captions
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.12}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+
+
+\newcommand{\ihat}{\boldsymbol{\hat{\textbf{\i}}}}
+\newcommand{\jhat}{\boldsymbol{\hat{\textbf{\j}}}}
+\newcommand{\khat}{\boldsymbol{\hat{\textbf{k}}}}
+
+%\let\oldvec\vec
+%\renewcommand{\vec}[1]{\oldvec{\mathbf{#1}}}
+
+\newcommand{\uhat}{\boldsymbol{\hat{\textbf{u}}}}
+\newcommand{\grad}{\vec{\nabla}}
+\newcommand{\<}{\left\langle}
+\renewcommand{\>}{\right\rangle}
+
+
+\begin{document}
+
+
+\renewcommand{\myTitle}{MATH 2330: Multivariable Calculus}
+
+\renewcommand{\mySubTitle}{4.7: Maximum \& Minimum Values}
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\lectTitle{\vspace*{-.5in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.25in}}
+
+
+
+%\vspace*{-.5in}
+\section*{Section 4.7 -  Maximum \& Minimum Values}
+
+%\hspace*{-.8in}%%\begin{minipage}{1.25\textwidth}
+%\begin{framed}
+
+\subsection*{Types of Critical Points:}
+\begin{multicols}{3}
+\begin{itemize}
+\item Local Minimum
+\item Local Maximum
+\item Saddle Point
+\end{itemize}
+\end{multicols}
+
+%\hrule
+\vspace*{.1in}
+
+\subsection*{First Derivative Test:}
+%\begin{multicols}{2}
+A point \((a,b)\) is a \textbf{critical point} of \(f\) if:
+\[f_x(a,b) = 0 \quad \text{\bf and} \quad f_y(a,b)=0\]
+or if one of the partial derivatives does not exist at \((a,b)\).\\
+
+\textbf{Geometric Interpretation:} If there is a local max or min where the tangent plane is defined, the tangent plane will be \textit{horizontal}.\\
+
+
+%\hrule
+\vspace*{.1in}
+
+
+\subsection*{Second Derivative Test:}
+In order to classify critical points, we calculate the quantity \(D\):
+\[
+D = \left|\begin{matrix}
+f_{xx} & f_{xy}\\
+f_{yx} & f_{yy}\\
+\end{matrix}\right|
+= f_{xx} f_{yy} - \left(f_{xy}\right)^2
+\]
+There are four possible outcomes from the 2nd derivative test, when \(D\) has been evaluated at the critical point \((a,b)\):
+\begin{enumerate}[{Case} 1:]
+\item \(D(a,b) > 0, \text{ and } f_{xx}(a,b) > 0\): Local Minimum at \((a,b)\)
+\item \(D(a,b) > 0, \text{ and } f_{xx}(a,b) < 0\): Local Maximum at \((a,b)\)
+\item \(D(a,b) < 0\): Saddle Point at \((a,b)\)
+\item \(D(a,b) =0\): Inconclusive, Test Fails \(\Rightarrow\) try something else!
+\end{enumerate}
+
+
+%\end{multicols}
+%
+%
+%%\end{framed}
+%
+%%%%\end{minipage}
+%
+%
+%
+%%\hspace*{-.8in}%%\begin{minipage}{1.25\textwidth}
+%%\begin{framed}
+
+%\hrule
+\vspace*{.1in}
+
+\subsection*{Global (Absolute) Maximum \& Minimum Values:}
+%If we are interested in a \textit{closed} set of values for our domain, we must \textit{check the boundary as well}.
+%
+%
+%
+%
+%\df{\textcolor{sblack}{The Extreme Value Theorem:}}~\\
+%Guarantees that there is an \textbf{absolute (global)} minimum value and an \textbf{absolute (global)} maximum value at some point in a closed domain.
+%
+%\df{\textcolor{sblack}{Strategy for Finding Global Max/Min Values:}}~\\
+To find the absolute max/min values on a closed region \(D\), assemble the candidates, then choose the largest/smallest:
+\begin{enumerate}
+\item Find the local maxima \& minima inside the region \(D\).
+\item Find extreme values on the boundary of \(D\).
+\item The largest value is the \textbf{global maximum} and the smallest value is the \textbf{global minimum}.
+\end{enumerate}
+
+
+%\end{multicols}
+
+
+%\end{framed}
+
+%%%\end{minipage}
+
+\pagebreak
+
+\section*{Example Problems:}
+
+
+\begin{enumerate}[{Example} 1: ]
+%\addtocounter{enumi}{1}
+\item Find and classify all of the critical points of \(f(x,y) = 2x^3+y^3-3x^2-12x-3y\)
+
+\vfill
+
+\item Find and classify all of the critical points of \(f(x,y) = x^2y^4\)
+
+\vfill
+
+\item Find and classify all of the critical points of \(f(x,y) = x^2+4xy+3y^2-6x-12y\)
+
+\vfill
+
+%
+%
+%\end{enumerate}
+%
+%\begin{enumerate}[{Example} 1: ]
+%\addtocounter{enumi}{3}
+
+\item Find the global maximum and minimum values of \(f(x,y) = x^2y^4\) on the domain \(D=\left\lbrace x^2+y^2\leq 1\right\rbrace\).
+
+\vfill
+
+\end{enumerate}
+
+\end{document}
+
