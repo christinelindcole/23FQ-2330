@@ -1,0 +1,835 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="23FQ-Math-2330-Ch5s5-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 49--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 49--><p class="noindent" >
+</p><!--l. 49--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 49--><p class="noindent" >
+</p><!--l. 49--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 2330: Multivariable Calculus</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 5.5: Cylindrical &#x0026; Spherical Coordinates</span></p></div>                                  </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Cylindrical Coordinates</h3>
+
+<!--l. 66--><p class="noindent" ><img 
+src="Ch12s6-Cylindrical-Coordinates.png" alt="PIC"  
+ />             <a 
+ id="Q1-1-3"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Equations:</h4>
+<div class="par-math-display"><!--l. 72--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                           <mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>z</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</mrow></math></div>
+<!--l. 72--><p class="nopar" >
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-3000"></a>Triple Integral Setup:</h5>
+<!--l. 78--><p class="noindent" ><span 
+class="cmssbx-10">Integrate with respect to </span><!--l. 78--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi></mrow></math> <span 
+class="cmssbx-10">ﬁrst,</span>
+<span 
+class="cmssbx-10">and be sure to replace all </span><!--l. 78--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math><span 
+class="cmssbx-10">&#x2019;s</span>
+<span 
+class="cmssbx-10">and </span><!--l. 78--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>y</mi></mrow></math><span 
+class="cmssbx-10">&#x2019;s.</span>
+</p>
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                       <msub><mrow 
+><mo mathsize="big" 
+>∭</mo><!--nolimits--></mrow><mrow 
+><mi 
+>E</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo mathsize="big" 
+> ∬</mo><!--nolimits--></mrow><mrow 
+><mi 
+>D</mi></mrow></msub 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msubsup><mrow 
+><mo>∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>u</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><msub><mrow 
+><mi 
+>u</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>z</mi></mrow></mfenced><mi 
+>d</mi><mi 
+>A</mi>
+</mrow></math></div>
+<!--l. 81--><p class="nopar" >
+</p>
+<div class="par-math-display"><!--l. 83--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+             <mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>α</mi></mrow><mrow 
+><mi 
+>β</mi></mrow></msubsup 
+><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>h</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><msub><mrow 
+><mi 
+>h</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msubsup 
+><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>u</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo class="qopname"> cos</mo><!--nolimits--> <mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>r</mi><mo class="qopname"> sin</mo><!--nolimits--> <mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><msub><mrow 
+><mi 
+>u</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo class="qopname"> cos</mo><!--nolimits--> <mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>r</mi><mo class="qopname"> sin</mo><!--nolimits--> <mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>r</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>r</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow></mfenced><mi 
+>r</mi><mi 
+>d</mi><mi 
+>z</mi><mi 
+>d</mi><mi 
+>r</mi><mi 
+>d</mi><mi 
+>𝜃</mi>
+</mrow></math></div>
+<!--l. 85--><p class="nopar" >
+</p><!--l. 87--><p class="noindent" ><span 
+class="cmssbx-10">Volume Element: </span><!--l. 87--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>d</mi><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>z</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>r</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>𝜃</mi></mrow></math>
+          </p><dl class="enumerate"><dt class="enumerate">
+Example 1:  </dt><dd 
+class="enumerate">Revisit ﬁnding the volume of the “Ice Cream Cone” solid region bounded above by <!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>4</mn></mrow></math>
+          and below by <!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>,
+          where <!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn></mrow></math>.
+          </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-7"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Spherical Coordinates</h3>
+<!--l. 120--><p class="noindent" >
+</p><!--l. 128--><p class="noindent" ><img 
+src="Ch12s7-Spherical-Coordinates.png" alt="PIC"  
+ />             <a 
+ id="Q1-1-9"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-5000"></a>Variables:</h4>
+     <ul class="itemize1">
+     <li class="itemize"><!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>ρ</mi></mrow></math>:
+     distance from the origin <!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>,
+     <!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>ρ</mi> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn></mrow></math>
+     </li>
+     <li class="itemize"><!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>𝜃</mi></mrow></math>:
+     same angle as in polar/cylindrical coordinates, <!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>0</mn> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">≤</mo> <mn>2</mn><mi 
+>π</mi></mrow></math>
+     </li>
+     <li class="itemize"><!--l. 136--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>ϕ</mi></mrow></math>:
+     angle measured down from the positive <!--l. 136--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi><mo 
+class="MathClass-bin">−</mo></mrow></math>axis,
+     <!--l. 136--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>0</mn> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>ϕ</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>π</mi></mrow></math></li></ul>
+<!--l. 138--><p class="noindent" > <br 
+class="newline" />
+<a 
+ id="Q1-1-11"></a>
+</p>
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-6000"></a>Equations:</h5>
+<div class="par-math-display"><!--l. 142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                   <mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</mrow></math></div>
+<!--l. 142--><p class="nopar" >
+_________________________________________________________________________________________
+<a 
+ id="Q1-1-13"></a>
+</p>
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-7000"></a>Triple Integral Setup:</h5>
+<!--l. 153--><p class="noindent" >For a solid region <!--l. 153--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>E</mi></mrow></math>
+with bounds: <!--l. 154--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><mi 
+>ρ</mi> <mo 
+class="MathClass-punc">:</mo> <mspace width="1em" class="nbsp" /><mi 
+>a</mi><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >to</mtext></mstyle><mspace width="1em" class="nbsp" /><mi 
+>b</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>𝜃</mi> <mo 
+class="MathClass-punc">:</mo> <mspace width="1em" class="nbsp" /><mi 
+>α</mi><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >to</mtext></mstyle><mspace width="1em" class="nbsp" /><mi 
+>β</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>ϕ</mi> <mo 
+class="MathClass-punc">:</mo> <mspace width="1em" class="nbsp" /><mi 
+>c</mi><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >to</mtext></mstyle><mspace width="1em" class="nbsp" /><mi 
+>d</mi></mrow></math>
+</p>
+                                                                                         
+                                                                                         
+<div class="par-math-display"><!--l. 156--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+           <msub><mrow 
+><mo mathsize="big" 
+>∭</mo><!--nolimits--></mrow><mrow 
+><mi 
+>E</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mi 
+>d</mi></mrow></msubsup 
+><msubsup><mrow 
+><mo> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>α</mi></mrow><mrow 
+><mi 
+>β</mi></mrow></msubsup 
+><msubsup><mrow 
+><mo> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>ρ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>ρ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>ρ</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi></mrow></mfenced><msup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>ϕ</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>ρ</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>𝜃</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>ϕ</mi>
+</mrow></math></div>
+<!--l. 160--><p class="nopar" >
+</p><!--l. 162--><p class="noindent" ><span 
+class="cmssbx-10">Volume Element: </span><!--l. 162--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>d</mi><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>ϕ</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>ρ</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>𝜃</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>ϕ</mi></mrow></math>
+          </p><dl class="enumerate"><dt class="enumerate">
+Example 1:  </dt><dd 
+class="enumerate">How would you describe a sphere of radius <!--l. 176--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi></mrow></math>
+          using spherical coordinates? Top only? Bottom only? First octant only?
+          </dd><dt class="enumerate">
+Example 2:  </dt><dd 
+class="enumerate">Find the volume of the region described by <!--l. 180--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>1</mn> <mo 
+class="MathClass-rel">≤</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">≤</mo> <mn>9</mn></mrow></math>
+          using a triple integral.
+          </dd><dt class="enumerate">
+Example 3:  </dt><dd 
+class="enumerate">Revisit ﬁnding the volume of the “Ice Cream Cone” solid region bounded above by <!--l. 183--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>4</mn></mrow></math>
+          and below by <!--l. 183--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>,
+          where <!--l. 183--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn></mrow></math>.
+          </dd><dt class="enumerate">
+Example 4:  </dt><dd 
+class="enumerate">What does the following quantity represent? Calculate it for the “Ice Cream Cone” solid region
+          described above.
+<div class="math-display"><!--l. 189--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                         <mfrac><mrow 
+><msub><mrow 
+><mo mathsize="big" 
+>∭</mo><!--nolimits--></mrow><mrow 
+><mi 
+>E</mi></mrow></msub 
+><mi 
+>z</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>V</mi> </mrow>
+ <mrow 
+><msub><mrow 
+><mo mathsize="big" 
+>∭</mo><!--nolimits--></mrow><mrow 
+><mi 
+>E</mi></mrow></msub 
+><mi 
+>d</mi><mi 
+>V</mi> </mrow></mfrac>
+</mrow></math></div>
+          <!--l. 189--><p class="nopar" >
+</p>
+          </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-15"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-8000"></a>Equations of Some “Standard” Surfaces:</h3>
+<a 
+ id="Q1-1-17"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-9000"></a>Cylinder of radius a:</h4>
+
+<!--l. 202--><p class="noindent" ><img 
+src="Ch12s7-Cylinder.png" alt="PIC"  
+ />
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><span 
+class="cmssbx-10">Rectangular Coordinates: </span><!--l. 207--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>
+     </li>
+     <li class="itemize"><span 
+class="cmssbx-10">Cylindrical Coordinates: </span><!--l. 208--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>
+     </li>
+     <li class="itemize"><span 
+class="cmssbx-10">Spherical Coordidnates: </span>(Not worth it!)</li></ul>
+<a 
+ id="Q1-1-19"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-10000"></a>Cone (top half):</h4>
+
+<!--l. 219--><p class="noindent" ><img 
+src="Ch12s7-Cone.png" alt="PIC"  
+ />
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><span 
+class="cmssbx-10">Rectangular Coordinates: </span><!--l. 224--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></math>
+     </li>
+     <li class="itemize"><span 
+class="cmssbx-10">Cylindrical Coordinates: </span><!--l. 225--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>z</mi></mrow></math>
+     </li>
+     <li class="itemize"><span 
+class="cmssbx-10">Spherical Coordidnates: </span><!--l. 226--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>ϕ</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>π</mi></mrow> 
+<mrow 
+><mn>4</mn></mrow></mfrac> </mrow></math></li></ul>
+<a 
+ id="Q1-1-21"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-11000"></a>Sphere of radius a:</h4>
+
+<!--l. 236--><p class="noindent" ><img 
+src="Ch12s7-Sphere.png" alt="PIC"  
+ />
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><span 
+class="cmssbx-10">Rectangular Coordinates: </span><!--l. 241--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>
+     </li>
+     <li class="itemize"><span 
+class="cmssbx-10">Cylindrical Coordinates: </span><!--l. 242--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>
+     </li>
+     <li class="itemize"><span 
+class="cmssbx-10">Spherical Coordidnates: </span><!--l. 243--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>ρ</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math></li></ul>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
