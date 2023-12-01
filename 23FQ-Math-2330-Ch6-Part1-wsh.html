@@ -1,0 +1,1031 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="23FQ-Math-2330-Ch6-Part1-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 69--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 69--><p class="noindent" >
+</p><!--l. 69--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 69--><p class="noindent" >
+</p><!--l. 69--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 2330: Multivariable Calculus</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Chapter 6 - Part 1</span></p></div>                                                                               </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>6.2 - Part 1: Line Integrals wrt Arclength</h3>
+<a 
+ id="Q1-1-3"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Parametric Curves Review (See OpenStax Calculus, Volume 3: 1.1-1.2, 3.1, 3.3):</h4>
+
+<!--l. 86--><p class="noindent" ><img 
+src="Ch13-curve.png" alt="PIC"  
+ />
+</p><!--l. 89--><p class="noindent" >  
+</p><!--l. 92--><p class="noindent" >A curve <!--l. 92--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>C</mi></mrow></math>
+can be parametrized using a <span 
+class="cmssbx-10">vector function</span>:
+</p>
+<div class="math-display"><!--l. 93--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                 <mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mi 
+>a</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>t</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>b</mi>
+</mrow></math></div>
+<!--l. 95--><p class="nopar" > Tangent Vector:
+</p>
+<div class="math-display"><!--l. 97--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                    <mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><msup><mrow 
+><mspace width="1em" class="nbsp" /></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced>
+</mrow></math></div>
+<!--l. 99--><p class="nopar" > Unit Tangent Vector:
+</p>
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                      <mover 
+accent="true"><mrow 
+><mi 
+>T</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><msup><mrow 
+><mspace width="1em" class="nbsp" /></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+<mrow 
+><mo 
+class="MathClass-rel">|</mo><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><msup><mrow 
+><mspace width="1em" class="nbsp" /></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-rel">|</mo></mrow></mfrac>
+</mrow></math></div>
+<!--l. 103--><p class="nopar" > Arclength:
+</p>
+<div class="math-display"><!--l. 105--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                       <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><msqrt><mrow><msup><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mo 
+class="MathClass-rel">|</mo><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><msup><mrow 
+><mspace width="1em" class="nbsp" /></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-rel">|</mo><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi>
+</mrow></math></div>
+<!--l. 107--><p class="nopar" >
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>Line Integral of a Scalar Function with respect to Arclength:</h4>
+<div class="par-math-display"><!--l. 115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                       <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi>
+</mrow></math></div>
+<!--l. 117--><p class="nopar" > denotes an integral whose domain of integration is a curve
+<!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>C</mi></mrow></math> from some starting
+point <!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>A</mi></mrow></math> to an
+                                                                                         
+                                                                                         
+ending point <!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>B</mi></mrow></math>.<br 
+class="newline" />To evaluate, we want to rewrite the integral in terms of the parameter
+<!--l. 119--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>t</mi></mrow></math>, using the
+distance element <!--l. 119--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>d</mi><mi 
+>s</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msup><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>t</mi></mrow></math>:
+</p>
+<div class="par-math-display"><!--l. 121--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                        <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><msqrt><mrow><msup><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>t</mi>
+</mrow></math></div>
+<!--l. 123--><p class="nopar" >
+<a 
+ id="Q1-1-7"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Example:</h3>
+          <dl class="enumerate"><dt class="enumerate">
+Example 1:  </dt><dd 
+class="enumerate">Evaluate the line integral shown below, where <!--l. 136--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>C</mi> <mo 
+class="MathClass-punc">:</mo></mrow></math>
+          left half of the circle <!--l. 136--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mn>6</mn></mrow></math>,
+          counterclockwise.
+<div class="math-display"><!--l. 137--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                      <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi>
+</mrow></math></div>
+          <!--l. 137--><p class="nopar" >
+          </p><!--l. 141--><p class="noindent" ><span 
+class="cmssi-10">Followup Discussion: Does this represent something that we can visualize?</span>
+</p>
+          </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-9"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-5000"></a>Group Work:</h3>
+<!--l. 150--><p class="noindent" >Evaluate the line integral <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi></mrow></math>
+for <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi></mrow></math> for the
+curve <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>C</mi> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></math>
+shown below, which is made up of a circular arc and a line segment. <br 
+class="newline" />
+</p><!--l. 155--><p class="noindent" ><img 
+src="23FQ-Math-2330-Ch6-Part1-wsh-figure0.png" alt="PIC"  
+ />
+Note:
+</p>
+<div class="math-display"><!--l. 202--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                         <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>s</mi>
+</mrow></math></div>
+<!--l. 204--><p class="nopar" >
+</p><!--l. 208--><p class="noindent" ><span 
+class="cmssi-10">Hint: </span>Start by parametrizing the curves <!--l. 208--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></math>
+and <!--l. 208--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></math>.
+<a 
+ id="Q1-1-11"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-6000"></a>Line Integrals with respect to x or y:</h4>
+<!--l. 219--><p class="noindent" >Given a curve <!--l. 219--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>C</mi></mrow></math> with
+parametrization <!--l. 219--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>a</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>t</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>b</mi></mrow></math>
+</p>
+                                                                                         
+                                                                                         
+<div class="par-math-display"><!--l. 221--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                            <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>t</mi>
+</mrow></math></div>
+<!--l. 223--><p class="nopar" >
+</p>
+<div class="par-math-display"><!--l. 225--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                            <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>t</mi>
+</mrow></math></div>
+<!--l. 227--><p class="nopar" >
+</p><!--l. 229--><p class="noindent" >As it turns out, these often occur together, so we develop a shorthand:
+</p>
+<div class="par-math-display"><!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                    <msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>P</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><mi 
+>P</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>y</mi>
+</mrow></math></div>
+<!--l. 233--><p class="nopar" >
+<a 
+ id="Q1-1-13"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-7000"></a>Example:</h3>
+          <dl class="enumerate"><dt class="enumerate">
+                                                                                         
+                                                                                         
+Example 2:  </dt><dd 
+class="enumerate">Integrate <!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow></msub 
+><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>x</mi><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>y</mi></mrow></math>
+          for <!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>C</mi> <mo 
+class="MathClass-punc">:</mo></mrow></math>
+          along the curve <!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>4</mn> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></math>
+          from <!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+          to <!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.
+          </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-15"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-8000"></a>6.1 - Vector Fields:</h3>
+<a 
+ id="Q1-1-17"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-9000"></a>Vector Field Deﬁnitions &#x0026; Terminology:</h4>
+<!--l. 262--><p class="noindent" >A <span 
+class="cmssbx-10">vector ﬁeld</span>, <!--l. 262--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>F</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow></math>
+is a function that assigns a <span 
+class="cmssi-10">vector </span>to each point in the domain:
+</p>
+<div class="math-display"><!--l. 263--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                 <mover 
+accent="true"><mrow 
+><mi 
+>F</mi></mrow><mo 
+class="MathClass-op">→</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>P</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced>
+</mrow></math></div>
+<!--l. 265--><p class="nopar" > <!--l. 266--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>Q</mi></mrow></math> are
+called the <span 
+class="cmssbx-10">component functions</span>, and are <span 
+class="cmssi-10">scalar </span>functions.<br 
+class="newline" />
+</p><!--l. 268--><p class="noindent" >Recall from section 4.6, we deﬁned the <span 
+class="cmssbx-10">gradient </span><!--l. 268--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+></mrow></mfenced></mrow></math>.
+The vector ﬁeld deﬁned by <!--l. 268--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi></mrow></math>
+is called the <span 
+class="cmssbx-10">Gradient Field:</span>
+</p>
+<div class="math-display"><!--l. 269--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                        <mover 
+accent="true"><mrow 
+><mi 
+>F</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi><mo 
+class="MathClass-punc">.</mo>
+</mrow></math></div>
+<!--l. 271--><p class="nopar" >
+</p><!--l. 273--><p class="noindent" > <br 
+class="newline" />A vector ﬁeld <!--l. 274--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>F</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow></math>
+is called <span 
+class="cmssbx-10">conservative </span>if
+</p>
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 275--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                        <mover 
+accent="true"><mrow 
+><mi 
+>F</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mo 
+class="MathClass-op">∇</mo></mrow><mo 
+class="MathClass-op">→</mo></mover><mi 
+>f</mi><mo 
+class="MathClass-punc">.</mo>
+</mrow></math></div>
+<!--l. 277--><p class="nopar" > for some scalar function <!--l. 278--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math>, which is
+called the <span 
+class="cmssbx-10">potential function </span>for <!--l. 278--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>F</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow></math>.
+</p><!--l. 284--><p class="noindent" ><img 
+src="Ch13s1-FvecField.png" alt="PIC"  
+ />                                                                                                                                    <img 
+src="Ch13s1-GvecField.png" alt="PIC"  
+ /><br 
+class="newline" /> <br 
+class="newline" />
+</p><!--l. 286--><p class="noindent" ><img 
+src="Ch13s1-HvecField.png" alt="PIC"  
+ />                                                                                                                                    <img 
+src="Ch13s1-GravityField.png" alt="PIC"  
+ />
+</p> 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+

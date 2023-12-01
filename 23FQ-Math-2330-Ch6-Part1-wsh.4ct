@@ -1,0 +1,20 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{6.2 - Part 1: Line Integrals wrt Arclength}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{6.2 - Part 1: Line Integrals wrt Arclength}}{1}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Parametric Curves Review (See OpenStax Calculus, Volume 3: 1.1-1.2, 3.1, 3.3):}}{1}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Parametric Curves Review (See OpenStax Calculus, Volume 3: 1.1-1.2, 3.1, 3.3):}}{1}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{Line Integral of a Scalar Function with respect to Arclength:}}{2}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-6}{Line Integral of a Scalar Function with respect to Arclength:}}{2}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{Example:}}{3}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-8}{Example:}}{3}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-9}{}{Group Work:}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-10}{Group Work:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-11}{}{Line Integrals with respect to x or y:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-12}{Line Integrals with respect to x or y:}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-13}{}{Example:}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-14}{Example:}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-15}{}{6.1 - Vector Fields:}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-16}{6.1 - Vector Fields:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-17}{}{Vector Field Definitions \& Terminology:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-9000}{QQ2-1-18}{Vector Field Definitions \& Terminology:}}{7}\relax 
+\par 
